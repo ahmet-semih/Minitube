@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet Semih Gumus</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #101827, #1f2937);
+      color: #fff;
+    }
+
+    .card {
+      text-align: center;
+      padding: 40px 32px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      max-width: 420px;
+      width: calc(100% - 32px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+    }
+
+    p {
+      margin: 0 0 28px;
+      line-height: 1.5;
+      color: #d1d5db;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    a.button:hover {
+      background: #16a34a;
+      transform: translateY(-2px);
+    }
+  </style>
+
+</head>
+
+<body>
+  <main class="card">
+    <h1>MiniTube</h1>
+    <p>Initialize the database and start the application.</p>
+    <a class="button" href="../php/install.php">Initialize Database</a>
+  </main>
+</body>
+</html>

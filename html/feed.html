@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniTube Feed</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #101827, #1f2937);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <p>Loading your feed…</p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const userId = params.get('user_id');
+    if (!userId) {
+      window.location.href = 'login.html';
+    } else {
+      window.location.href = '../php/feed.php?user_id=' + encodeURIComponent(userId);
+    }
+  </script>
+</body>
+</html>
