@@ -2,8 +2,6 @@
 
 A simplified video-sharing web application built to demonstrate relational database design, user authentication, subscription mapping, and nested comment threads.
 
-Developed as a Term Project for **CSE348: Database Management Systems (Spring 2026)**.
-
 ---
 
 ## 📂 Project Architecture
